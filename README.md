@@ -1,12 +1,24 @@
-# FedRAMP Moderate Compliance Portfolio
+> **Portfolio disclaimer:** KTech HealthCloud is a **fictitious** cloud service offering built to demonstrate FedRAMP/NIST SP 800-53 Rev. 5 GRC skills. This is a **simulated authorization program**, not an actual FedRAMP authorization. No real agency, 3PAO, CSP, vendor tool, or dataset is represented. All findings, scores, dates, and personnel are illustrative.
 
-## KTech HealthCloud – FedRAMP Moderate Authorization & Compliance Program
+A simulated FedRAMP Moderate program demonstrating the end-to-end security compliance lifecycle for a cloud-based healthcare SaaS environment — authorization readiness, NIST SP 800-53 control implementation, System Security Plan (SSP) documentation, 3PAO assessment support, POA&M management, vulnerability management, cloud risk assessment, configuration management, incident response, and continuous monitoring (ConMon).
 
-This portfolio demonstrates a simulated end-to-end FedRAMP Moderate compliance and authorization program for a fictional cloud-based SaaS environment.
+## Why this exists
 
-The project demonstrates practical application of FedRAMP requirements and NIST SP 800-53 security controls across the authorization lifecycle—from initial scoping and readiness through security control implementation, assessment, remediation, authorization, and continuous monitoring.
+This repository is a working demonstration of the artifacts a FedRAMP/GRC analyst actually produces day to day — not a copy of FedRAMP guidance. Each folder below is something a hiring manager can open and read on its own.
 
-> **Portfolio Disclaimer:** KTech HealthCloud is a fictional organization created for cybersecurity portfolio and educational purposes. All systems, findings, evidence, risks, and compliance artifacts contained in this repository are simulated. No proprietary, customer, or U.S. Government information is included.
+## The scenario
+
+**KTech HealthCloud** is a multi-tenant SaaS platform (patient engagement + care-coordination workflows) hosted on a major commercial cloud (AWS), pursuing a **FedRAMP Moderate** Authority to Operate (ATO) via the **Tailored LI-SaaS** baseline, sponsored by a federal healthcare agency. Because the tenant data includes PHI, the program also maps FedRAMP controls to HIPAA/HITECH Security Rule safeguards.
+
+| Attribute | Value |
+|---|---|
+| Cloud Service Offering | KTech HealthCloud (SaaS) |
+| FedRAMP Impact Level | Moderate |
+| Baseline | FedRAMP Tailored LI-SaaS (NIST SP 800-53 Rev. 5) |
+| Authorization Path | Agency ATO |
+| Underlying IaaS/PaaS | AWS GovCloud (US) — inherited controls |
+| Data Types | PII, PHI (HIPAA/HITECH applicable) |
+| 3PAO | Simulated independent assessor ("Meridian Assurance Partners" — fictitious) |
 
 ---
 
@@ -61,26 +73,25 @@ This project demonstrates practical experience with:
 ```
 ---
 
-## Portfolio Artifacts
+## Repository structure
 
-| Area | Demonstration |
-|---|---|
-| FedRAMP Roadmap | Authorization lifecycle and readiness approach |
-| Control Implementation | NIST SP 800-53 control implementation and ownership |
-| SSP | Sample control implementation narratives |
-| 3PAO Readiness | Assessment preparation and evidence management |
-| POA&M | Security weakness and remediation tracking |
-| Vulnerability Management | Scan findings, prioritization and remediation |
-| Continuous Monitoring | Ongoing control and vulnerability monitoring |
-| Risk Management | Cloud security risk identification and treatment |
-| Incident Response | Incident management and reporting workflow |
-| Configuration Management | Security configuration and change governance |
+| Folder | Contents | Demonstrates |
+|---|---|---|
+| [`01-FedRAMP-Roadmap/`](01-FedRAMP-Roadmap) | Six-phase authorization roadmap, healthcare (HIPAA/HITECH) overlay | Authorization lifecycle knowledge |
+| [`02-Control-Implementation/`](02-Control-Implementation) | Control Implementation Matrix (`.xlsx`) — full Tailored LI-SaaS control list, ownership, status | NIST 800-53 control mapping |
+| [`03-SSP/`](03-SSP) | 12 SSP control implementation narratives, Evidence Matrix (`.xlsx`) | SSP development & maintenance |
+| [`04-3PAO-Assessment/`](04-3PAO-Assessment) | Assessment readiness workflow (SAP→Test→SAR), Evidence Request Tracker (`.xlsx`) | 3PAO coordination |
+| [`05-POAM/`](05-POAM) | POA&M register (`.xlsx`) | Weakness tracking & remediation management |
+| [`06-Vulnerability-Management/`](06-Vulnerability-Management) | Vulnerability register (`.xlsx`), remediation workflow | Scan coordination, CVSS triage |
+| [`07-Continuous-Monitoring/`](07-Continuous-Monitoring) | ConMon plan, monthly/quarterly/annual calendar (`.xlsx`), metrics dashboard (`.xlsx`) | Ongoing authorization maintenance |
+| [`08-Risk-Management/`](08-Risk-Management) | Cloud risk register (`.xlsx`) | Vendor/cloud risk assessment |
+| [`09-Incident-Response/`](09-Incident-Response) | FedRAMP incident response & US-CERT reporting workflow | IR coordination with government stakeholders |
+| [`10-Configuration-Management/`](10-Configuration-Management) | Configuration/change tracker (`.xlsx`) | Change management documentation |
 
 ---
+## How the artifacts connect
 
-## Repository Structure
-
-FedRAMP artifacts will be organized by lifecycle stage so that each section demonstrates how governance, technical controls, assessment evidence, remediation, and continuous monitoring work together.
+The environment is scoped (Phase 1) → controls are implemented and written into the SSP (Phase 2) → evidence is staged and the 3PAO tests it (Phase 3) → findings become POA&M items and are remediated (Phase 4) → the package is authorized (Phase 5) → and the program sustains authorization through vulnerability management, configuration management, incident response, and recurring ConMon reporting (Phase 6) — which feeds new findings back into the POA&M, closing the loop.
 
 ---
 
