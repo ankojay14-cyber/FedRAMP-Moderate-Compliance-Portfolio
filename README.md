@@ -30,20 +30,32 @@ This project demonstrates practical experience with:
 ---
 
 ## FedRAMP Authorization Lifecycle
-
-**1. Scope & Readiness**  
-↓  
-**2. Security Control Implementation**  
-↓  
-**3. SSP & Evidence Development**  
-↓  
-**4. 3PAO Assessment Readiness**  
-↓  
-**5. Findings, Remediation & POA&M**  
-↓  
-**6. Authorization**  
-↓  
-**7. Continuous Monitoring**
+┌───────────────────────┐
+│ 1. Scope & Readiness  │
+└──────────┬────────────┘
+           ↓
+┌───────────────────────────┐
+│ 2. Control Implementation │
+│    + SSP Documentation    │
+└──────────┬────────────────┘
+           ↓
+┌───────────────────────────┐
+│ 3. 3PAO Assessment        │
+│    SAP → Test → SAR       │
+└──────────┬────────────────┘
+           ↓
+┌───────────────────────────┐
+│ 4. Remediation & POA&M    │
+└──────────┬────────────────┘
+           ↓
+┌───────────────────────────┐
+│ 5. Authorization          │
+└──────────┬────────────────┘
+           ↓
+┌───────────────────────────┐
+│ 6. Continuous Monitoring │
+│    (Ongoing)              │
+└───────────────────────────┘
 
 ---
 
